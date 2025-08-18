@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-    <div>  This is nextjs framework index page </div>
+    <div className="text-center">  This is index page, under processing... </div>
   );
 }

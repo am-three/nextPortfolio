@@ -4,9 +4,13 @@ import React, { useState } from 'react'
 // import Image from 'next/image';
 // import logo from '../../../public/amthreeLogo.png'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
 
+    const pathname = usePathname();  //for active nav page
+
+    // menu for desktop/mobile device
     const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
     const toggleDrawerOpen = () => {
@@ -35,13 +39,20 @@ const Navbar = () => {
 
                     <div className='hidden md:flex items-center space-x-10'>
                         {
-                            menuItems.map((item) => (
+                            menuItems.map((item) => {
 
-                                <Link key={item.href} href={item.href} className='hover:text-primary transaction-colors'>
-                                    {item.label}
-                                </Link>
+                                const isActive = pathname === item.href;
+                                return (
+                                    <Link key={item.href}
+                                        href={item.href}
+                                        className={`hover:text-primary transaction-colors
+                                          ${isActive ? 'font-semibold text-primary' : ' '} `} >
 
-                            ))
+                                        {item.label}
+                                    </Link>
+                                )
+
+                            })
                         }
                     </div>
 
@@ -49,7 +60,7 @@ const Navbar = () => {
 
             </div>
 
-        </nav>
+        </nav >
 
     )
 }
