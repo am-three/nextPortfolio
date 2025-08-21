@@ -7,11 +7,13 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { BoltIcon, MoonIcon, XCircleIcon, Bars3CenterLeftIcon } from '@heroicons/react/24/solid';
+import { useTheme } from '../context/ThemeContext';
 
 
 const Navbar = () => {
 
-    const theme = 'dark';
+    const { theme, toggleTheme } = useTheme();
+    // const theme = 'dark';
     const pathname = usePathname();  //for active nav page
 
     // -----------------------------------------------------------------------
@@ -33,7 +35,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className='fixed w-full z-50  bg-gray-600/80 dark:bg-dark/80'>
+        <nav className='fixed w-full z-50  bg-white/60 dark:bg-green-600/60 border-b border-gray-300 shadow-md'>
 
             <div className='container max-w-7xl mx-auto px-4 '>
 
@@ -48,7 +50,7 @@ const Navbar = () => {
 
                                 const isActive = pathname === item.href;
                                 return (
-                                    <Link key={item.href}
+                                    <Link key={index}
                                         href={item.href}
                                         className={`hover:text-primary transaction-colors
                                           ${isActive ? 'font-semibold text-primary' : ' '} `} >
@@ -61,7 +63,8 @@ const Navbar = () => {
                         }
 
                         {/* light/dark theme */}
-                        <button className='rounded cursor-pointer text-primary hover:scale-90 duration-300 transaction-colors'>
+                        <button className='rounded cursor-pointer text-primary hover:scale-90 duration-300 transaction-colors'
+                            onClick={toggleTheme}>
                             {
                                 theme === 'dark' ? (
                                     <BoltIcon className='w-5 h-5' />
@@ -90,7 +93,7 @@ const Navbar = () => {
                             <div className='py-4 space-y-4'>
                                 {
                                     menuItems.map((item, index) => (
-                                        <div key={index}>
+                                        <div key={index} onClick={toggleDrawerOpen}>
                                             <Link href={item.href}
                                                 className='block py-2 hover:text-primary transaction-colors'>
                                                 {item.label}
@@ -101,12 +104,18 @@ const Navbar = () => {
                             </div>
 
                             <div>
-                                <button className='flex items-center py-2  rounded cursor-pointer text-primary hover:scale-90 duration-300 transaction-colors'>
+                                <button onClick={toggleTheme}
+                                    className='flex items-center py-2 rounded cursor-pointer text-primary hover:scale-90 duration-300 transaction-colors'>
                                     {
+                                        // theme === 'dark' ? (
+                                        //     <><BoltIcon className='w-5 h-5 mr-2' /> Light Mode </>
+                                        // ) : (
+                                        //     <><MoonIcon className='w-5 h-5 mr-2' /> Dark Mode </>
+                                        // )
                                         theme === 'dark' ? (
-                                            <><BoltIcon className='w-5 h-5 mr-2' /> Light Mode </>
+                                            <><BoltIcon className='w-5 h-5 mr-2' />  </>
                                         ) : (
-                                            <><MoonIcon className='w-5 h-5 mr-2' /> Dark Mode </>
+                                            <><MoonIcon className='w-5 h-5 mr-2' />  </>
                                         )
                                     }
                                 </button>
