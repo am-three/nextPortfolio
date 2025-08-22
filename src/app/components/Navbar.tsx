@@ -1,8 +1,9 @@
 'use client'
 
 import React, { useState } from 'react'
-// import Image from 'next/image';
-// import logo from '../../../public/amthreeLogo.png'
+import Image from 'next/image';
+import icon from '../../../public/myicon3.png'
+
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -35,13 +36,16 @@ const Navbar = () => {
 
     return (
 
-        <nav className='fixed w-full z-50  bg-white/60 dark:bg-green-600/60 border-b border-gray-300 shadow-md'>
+        <nav className='fixed w-full z-50  bg-white/40 dark:bg-green-400/70 border-b border-gray-300 shadow-md'>
 
             <div className='container max-w-7xl mx-auto px-4 '>
 
                 <div className='h-16 flex justify-between items-center '>
 
-                    <Link href='/' className='text-primary text-xl font-bold'> amthreecmty&trade; </Link>
+                    {/* <Link href='/' className='text-primary text-xl font-bold'> amthreecmty&trade; </Link> */}
+                    <Link href='/'>
+                        <Image src={icon} alt='icon' className='w-16 h-16' />
+                    </Link>
 
                     {/* for desktop.v menu */}
                     <div className='hidden md:flex items-center space-x-10'>
