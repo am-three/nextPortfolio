@@ -36,7 +36,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className='fixed w-full z-50  bg-white/40 dark:bg-green-400/70 border-b border-gray-300 shadow-md'>
+        <nav className='fixed w-full z-50 backdrop-blur-sm bg-white/40 dark:bg-yellow-300/60 border-b border-gray-300 shadow-md'>
 
             <div className='container max-w-7xl mx-auto px-4 '>
 
