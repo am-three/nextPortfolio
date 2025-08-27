@@ -3,24 +3,24 @@ import { Project } from "../types";
 export const projects: Project[] = [
     {
         title: 'E-commerce Platform',
-        description: 'Fresh design with React library & TailwindCss Front-End with "supabase user auth"',
-        technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind CSS', 'supabase'],
+        description: 'Fresh design Front-End with "supabase user auth"',
+        technologies: ['React', 'TailwindCSS', 'supabase'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
         image: '/projects/softdrinkweb.jpg',
     },
     {
         title: 'Landing Page Template Web',
-        description: 'Modern landing web page design with Vue framework & TailwindCss',
-        technologies: ['Vue.js', 'HTML', 'CSS', 'TailwindCss'],
+        description: 'Modern landing template Web page with Vue framework & TailwindCss',
+        technologies: ['Vue.js', 'CSS', 'TailwindCss'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
         image: '/projects/cattailweb.jpg',
     },
     {
         title: 'University Website',
-        description: 'Modern University Web page with React & TailwindCss',
-        technologies: ['React', 'HTML', 'CSS', 'JavaScript', 'TailwindCss'],
+        description: 'Modern University Web page for promoting BRAND',
+        technologies: ['React', 'TailwindCss'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
         image: '/projects/uniweb.jpg',
@@ -43,26 +43,11 @@ export const projects: Project[] = [
     },
     {
         title: 'Portfolio',
-        description: 'My personal portfolio website showcasing my projects and skills.',
+        description: 'My personal portfolio website showcasing my projects and skills',
         technologies: ['React', 'NextJs'],
         githubLink: 'https://github.com',
         demoLink: 'https://demo.com',
         image: '/projects/portfolio.png',
     },
-    // {
-    //     title: 'Recipe Finder',
-    //     description: 'A recipe search application using the Edamam API.',
-    //     technologies: ['React', 'Edamam API'],
-    //     githubLink: 'https://github.com',
-    //     demoLink: 'https://demo.com',
-    //     image: '/projects/recipe-finder.png',
-    // },
-    // {
-    //     title: 'Expense Tracker',
-    //     description: 'A personal finance tracker to manage expenses and income.',
-    //     technologies: ['React', 'Firebase'],
-    //     githubLink: 'https://github.com',
-    //     demoLink: 'https://demo.com',
-    //     image: '/projects/expense-tracker.webp',
-    // }
+
 ];

@@ -2,7 +2,7 @@ const Projectpage = () => {
 
     return (
         <>
-            <div> project </div>
+            <div> project page loading... </div>
         </>
     )
 }

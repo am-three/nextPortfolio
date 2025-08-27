@@ -7,7 +7,7 @@ import { FaMailBulk } from 'react-icons/fa'
 const Hero = () => {
     return (
 
-        <section className='md:py-20 container max-w-7xl mx-auto px-4'>
+        <section className='md:py-20 container max-w-7xl mx-auto px-4 '>
 
             <div className='max-w-3xl mx-auto text-center'>
 

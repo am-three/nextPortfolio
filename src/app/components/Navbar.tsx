@@ -2,13 +2,14 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
-import icon from '../../../public/myicon3.png'
+import icon from '../../../public/myicon4.png'
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { BoltIcon, MoonIcon, XCircleIcon, Bars3CenterLeftIcon } from '@heroicons/react/24/solid';
 import { useTheme } from '../context/ThemeContext';
+import { HomeIcon } from '@heroicons/react/16/solid';
 
 
 const Navbar = () => {
@@ -27,16 +28,16 @@ const Navbar = () => {
 
     // ---------------------------------------------------------------------
     const menuItems = [
-        { href: '/', label: 'Home' },
-        { href: '/about', label: 'About' },
-        { href: '/projects', label: 'Projects' },
+        { href: '/', label: 'HOME', icon: <HomeIcon /> },
+        { href: '/about', label: 'ABOUT' },
+        { href: '/projects', label: 'PROJECTS' },
         // { href: '/blogs', label: 'Blogs' },
-        { href: '/contact', label: 'Contact' },
+        { href: '/contact', label: 'CONTACT' },
     ]
 
     return (
 
-        <nav className='fixed w-full z-50 backdrop-blur-sm bg-white/40 dark:bg-yellow-300/60 border-b border-gray-300 shadow-md'>
+        <nav className='fixed w-full z-50 backdrop-blur-sm bg-white/40 dark:bg-green-400/60 border-b border-gray-300 shadow-md'>
 
             <div className='container max-w-7xl mx-auto px-4 '>
 
@@ -56,7 +57,7 @@ const Navbar = () => {
                                 return (
                                     <Link key={index}
                                         href={item.href}
-                                        className={`hover:text-primary transaction-colors
+                                        className={` hover:text-primary transaction-colors hover:translate-x-2
                                           ${isActive ? 'font-semibold text-primary' : ' '} `} >
 
                                         {item.label}

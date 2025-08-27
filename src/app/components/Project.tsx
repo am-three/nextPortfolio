@@ -14,13 +14,31 @@ const Project = () => {
                 {
                     projects.map((project) => (
                         <article key={project.title}
-                            className='dark:bg-dark/50 bg-white rounded-lg shadow-md p-6'
+                            className='dark:bg-dark/50 bg-white rounded-lg shadow-lg  p-6'
                         >
                             <div className='relative aspect-video mb-4 rounded-lg overflow-hidden'>
                                 <Image src={project.image} alt={project.title} fill
                                     className='object-cover'
                                     sizes=' (max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw '
                                 />
+                            </div>
+
+                            <h3 className='text-xl font-bold mb-5'>
+                                {project.title}
+                            </h3>
+
+                            <p className='dark:text-gray-300 mb-6'>
+                                {project.description}
+                            </p>
+
+                            <div className='flex flex-wrap gap-3'>
+                                {
+                                    project.technologies.map((tech) => (
+                                        <span key={tech} className='px-3 py-2  dark:bg-primary/20 dark:text-primary bg-primary rounded-full'>
+                                            {tech}
+                                        </span>
+                                    ))
+                                }
                             </div>
 
                         </article>
