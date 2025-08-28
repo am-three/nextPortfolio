@@ -2,8 +2,8 @@ import React from 'react'
 import { projects } from '../contents/projects'
 import Image from 'next/image'
 import Link from 'next/link'
-import { FaGithub } from 'react-icons/fa6'
-import { FaExchangeAlt, FaExternalLinkAlt } from 'react-icons/fa'
+
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const Project = () => {
     return (

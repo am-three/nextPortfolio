@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaToolbox, FaTools } from 'react-icons/fa'
+import { FaTools } from 'react-icons/fa'
 import { FaCode, FaLaptopCode } from 'react-icons/fa6'
 
 const Aboutpage = () => {
