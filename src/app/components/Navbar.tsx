@@ -41,7 +41,7 @@ const Navbar = () => {
 
             <div className='container max-w-7xl mx-auto px-4 '>
 
-                <div className='h-16 flex justify-between items-center '>
+                <div className='h-12 flex justify-between items-center '>
 
                     {/* <Link href='/' className='text-primary text-xl font-bold'> amthreecmty&trade; </Link> */}
                     <Link href='/'>
@@ -94,7 +94,7 @@ const Navbar = () => {
                 {/* mobile menu */}
                 {
                     drawerOpen && (
-                        <div className='md:hidden'>
+                        <div className='md:hidden w-fit'>
                             <div className='py-4 space-y-4'>
                                 {
                                     menuItems.map((item, index) => (

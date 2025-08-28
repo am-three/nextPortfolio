@@ -95,3 +95,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+.imgBdr {
+  animation: morph 10s ease-in-out infinite;
+  border: solid 2px;
+  border-color: rgb(210, 177, 30);
+  padding: 2px;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 50% 30% / 40% 60%;
+  }
+
+  50% {
+    border-radius: 40% 60% / 30% 50%;
+  }
+
+  100% {
+    border-radius: 50% 30% / 40% 60%;
+  }
+}
