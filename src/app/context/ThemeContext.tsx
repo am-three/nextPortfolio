@@ -1,5 +1,5 @@
 'use client'
-import { initialize } from "next/dist/server/lib/render-server";
+
 import { createContext, useContext, useEffect, useState } from "react";
 
 type Theme = 'light' | 'dark';
