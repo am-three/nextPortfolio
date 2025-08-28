@@ -13,7 +13,7 @@ const Aboutpage = () => {
 
             <section className='mb-20'>
                 <p className='text-lg tracking-tight text-secondary max-w-6xl mx-auto'>
-                    I’m motivated young person who is looking for full-time job. As I’m youth, I’m sure that I can learn things easily and work actively. A motivated
+                    I&apos;m motivated young person who is looking for full-time job. As I&apos;m youth, I&apos;m sure that I can learn things easily and work actively. A motivated
                     and detail-oriented JavaScript Frontend Junior with a solid foundation in web development principles, JavaScript, React, and responsive design.
                     I'm trying to enter web development environment. I want a lot of experiences about that, I can do myself or under senior's guide line and want to use it in your interests.
                     Passionate about creating user-friendly interfaces and eager to contribute to team success through hard work and continuous learning. I'm wanna and trying to build modern websites,
