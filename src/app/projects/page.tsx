@@ -11,7 +11,7 @@ const Projectpage = () => {
 
             <h3 className="text-4xl font-bold mb-8 text-center"> My Projects </h3>
             <p className="text-center text-lg text-secondary mb-5">
-                My learning & testing modern webs are here .You can click on 'Demo' to view live demo.
+                My learning & testing modern webs are here . You can click on <span className="text-blue-500">Demo</span> to view live demo.
             </p>
             <div className='grid md:grid-cols-3 grid-cols-1 gap-8'>
 
