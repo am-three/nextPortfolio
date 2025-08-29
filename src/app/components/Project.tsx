@@ -53,12 +53,12 @@ const Project = () => {
 
                                 </Link> */}
 
-                                <Link href={project.demoLink} target='_blank' className='flex gap-2 items-center hover:text-primary dark:text-gray-300 transaction duration-300' >
+                                {/* <Link href={project.demoLink} target='_blank' className='flex gap-2 items-center hover:text-primary dark:text-gray-300 transaction duration-300' >
 
                                     <FaExternalLinkAlt className='w-3 h-3' />
                                     <span> Demo </span>
 
-                                </Link>
+                                </Link> */}
 
                             </div>
 

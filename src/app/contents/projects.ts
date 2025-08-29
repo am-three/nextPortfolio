@@ -4,7 +4,7 @@ export const projects: Project[] = [
     {
         title: 'E-commerce Platform',
         description: 'Fresh design Front-End with "supabase user auth"',
-        technologies: ['React', 'Vite.js', 'TailwindCSS', 'supabase'],
+        technologies: ['React', 'Vue.js', 'TailwindCSS', 'supabase'],
         githubLink: 'https://github.com/am-three/softDrinkCom',
         demoLink: 'https://softdrink-pi.vercel.app/',
         image: '/projects/softdrinkweb.jpg',
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     {
         title: 'University Website',
         description: 'Modern University Web page for promoting BRAND',
-        technologies: ['React', 'Vite.js', 'TailwindCss'],
+        technologies: ['React', 'Vue.js', 'TailwindCss'],
         githubLink: '',
         demoLink: 'https://reactwebtest-nu.vercel.app/',
         image: '/projects/uniweb.jpg',
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     {
         title: 'To Do List Web App',
         description: 'Memory for to do Things with supabase & Vite',
-        technologies: ['React', 'Vite.js', 'TailwindCss', 'supabase'],
+        technologies: ['React', 'Vue.js', 'TailwindCss', 'supabase'],
         githubLink: 'https://supabase-crud-rose.vercel.app/',
         demoLink: 'https://supabase-crud-rose.vercel.app/',
         image: '/projects/todolist.jpg',
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     {
         title: 'Portfolio',
         description: 'My personal portfolio website showcasing my projects and skills',
-        technologies: ['React', 'NextJs'],
+        technologies: ['React', 'NextJs', 'Vue.js', 'Framer Motion'],
         githubLink: '',
         demoLink: '/',
         image: '/projects/portfolio.png',

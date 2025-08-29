@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
-import { FaGithub, FaInstagram } from 'react-icons/fa6'
-import { AiFillMail } from 'react-icons/ai';
+import { FaEnvelope, FaGithub, FaInstagram } from 'react-icons/fa6'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
     return (
@@ -13,9 +14,18 @@ const Footer = () => {
 
                     <div className='mb-4 md:mb-0'>
                         <Link href='/' className='font-bold text-primary text-xl'> amthreeix&trade; </Link>
-                        <p className='text-sm text-secondary mt-2'>
+                        {/* <p className='text-sm text-secondary mt-2'>
                             &copy; {new Date().getFullYear()} amthreeix All rights reserved.
-                        </p>
+                        </p> */}
+                        <motion.p
+                            className="text-sm text-secondary mt-2"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 3, delay: 5, repeat: Infinity, repeatType: "reverse" }}
+                        >
+                            &copy; {new Date().getFullYear()} amthreeix All rights reserved.
+                        </motion.p>
                     </div>
 
                     <div className='flex space-x-3'>
@@ -34,7 +44,7 @@ const Footer = () => {
                         <Link href='https://mail.google.com/mail/?view=cm&fs=1&to=mthree9999@gmail.com' target='_blank'
                             className='text-2xl hover:text-primary dark:text-gray-400 transaction duration-300'
                         >
-                            <AiFillMail className='w-6 h-6' />
+                            <FaEnvelope className='w-6 h-6' />
                         </Link>
                     </div>
 
