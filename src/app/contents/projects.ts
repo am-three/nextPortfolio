@@ -36,9 +36,9 @@ export const projects: Project[] = [
     {
         title: 'Software Company Website',
         description: 'A software company website with HTML/CSS/Js',
-        technologies: ['HTML/CSS/Js', 'Bootstrap'],
+        technologies: ['HTML/CSS/Js', 'Bootstrap', 'JQuery'],
         githubLink: '',
-        demoLink: '',
+        demoLink: 'https://testproject-delta-three.vercel.app/',
         image: '/projects/htmlproject.png',
     },
     {

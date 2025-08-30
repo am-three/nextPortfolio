@@ -41,7 +41,7 @@ const Footer = () => {
                             <FaInstagram />
                         </Link>
 
-                        <Link href='https://mail.google.com/mail/?view=cm&fs=1&to=mthree9999@gmail.com' target='_blank'
+                        <Link href='mailto:mthree9999@gmail.com' target='_blank'
                             className='text-2xl hover:text-primary dark:text-gray-400 transaction duration-300'
                         >
                             <FaEnvelope className='w-6 h-6' />
