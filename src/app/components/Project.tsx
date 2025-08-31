@@ -1,18 +1,26 @@
+'use client'
 import React from 'react'
 import { projects } from '../contents/projects'
 import Image from 'next/image'
 import Link from 'next/link'
-
-import { FaExternalLinkAlt } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { fadeInUp, pageTransition } from '../utils/animations'
+// import { FaExternalLinkAlt } from 'react-icons/fa'
 
 const Project = () => {
     return (
 
-        <section className='container py-20 max-w-7xl mx-auto px-4'>
+        <section className='container py-15 max-w-7xl mx-auto px-4'>
 
-            <h3 className='text-3xl font-bold text-center mb-12'> Featured Projects </h3>
+            <motion.h3
+                {...fadeInUp}
+                transition={{ delay: 0.9 }}
+                className='text-3xl font-bold text-center mb-12'> Featured Projects </motion.h3>
 
-            <div className='grid md:grid-cols-3 grid-cols-1 gap-8'>
+            <motion.div
+                {...pageTransition}
+                transition={{ delay: 1.5 }}
+                className='grid md:grid-cols-3 grid-cols-1 gap-8'>
 
                 {
                     projects.map((project) => (
@@ -66,7 +74,21 @@ const Project = () => {
                     ))
                 }
 
-            </div>
+            </motion.div>
+
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
+                className='max-w-3xl mx-auto text-center mt-20 mb-0'
+            >
+                <Link href='/about'
+                    className='bg-gray-400 md:w-fit md:w-auto md:text-lg text-lg text-black inline-block px-3 py-1 hover:bg-primary/70 transaction-colors rounded-md'
+                >
+                    About Me
+                </Link>
+            </motion.div>
 
 
         </section>

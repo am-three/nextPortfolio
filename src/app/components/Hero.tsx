@@ -60,13 +60,13 @@ const Hero = () => {
                     transition={{ delay: 0.7 }}
                     className='flex md:flex-row flex-col  justify-center items-center gap-5'>
                     <Link href='/projects'
-                        className='bg-primary/80 md:w-fit md:w-auto md:text-lg text-xl text-black inline-block px-5 py-1 hover:bg-primary/50 transaction-colors rounded-md'
+                        className='bg-primary/80 md:w-fit md:w-auto md:text-lg text-lg text-black inline-block px-5 py-1 hover:bg-primary/50 transaction-colors rounded-md'
                     >
                         View Project
                     </Link>
 
                     <Link href='/contact'
-                        className='bg-gray-400 md:w-fit md:w-auto md:text-lg text-xl text-black inline-block px-5 py-1 hover:bg-primary/70 transaction-colors rounded-md'
+                        className='bg-gray-400 md:w-fit md:w-auto md:text-lg text-lg text-black inline-block px-5 py-1 hover:bg-primary/70 transaction-colors rounded-md'
                     >
                         Contact Me
                     </Link>
