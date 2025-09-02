@@ -20,7 +20,7 @@ export const projects: Project[] = [
     {
         title: 'University Website',
         description: 'Modern University Web page for promoting BRAND',
-        technologies: ['React', 'Vue.js', 'TailwindCss'],
+        technologies: ['React', 'React router', 'Vue.js', 'TailwindCss'],
         githubLink: '',
         demoLink: 'https://reactwebtest-nu.vercel.app/',
         image: '/projects/uniweb.jpg',

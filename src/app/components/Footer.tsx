@@ -24,7 +24,7 @@ const Footer = () => {
                             exit={{ opacity: 0 }}
                             transition={{ duration: 3, delay: 5, repeat: Infinity, repeatType: "reverse" }}
                         >
-                            &copy; {new Date().getFullYear()} amthreeix All rights reserved.
+                            &copy; {new Date().getFullYear()} amthreeix. All rights reserved.
                         </motion.p>
                     </div>
 
