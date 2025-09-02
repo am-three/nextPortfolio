@@ -77,14 +77,14 @@ const Project = () => {
             </motion.div>
 
             <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
-                className='max-w-3xl mx-auto text-center mt-20 mb-0'
+                // initial={{ opacity: 0 }}
+                // animate={{ opacity: 1 }}
+                // exit={{ opacity: 0 }}
+                // transition={{ duration: 5, repeat: Infinity, repeatType: "reverse" }}
+                className='max-w-3xl mx-auto text-center mt-20 '
             >
                 <Link href='/about'
-                    className='bg-gray-400 md:w-fit md:w-auto md:text-lg text-lg text-black inline-block px-3 py-1 hover:bg-primary/70 transaction-colors rounded-md'
+                    className='md:w-fit md:w-auto md:text-lg text-lg inline-block px-3 py-1 transaction-colors rounded-md hover:underline'
                 >
                     About Me
                 </Link>
