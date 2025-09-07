@@ -95,7 +95,7 @@ const Aboutpage = () => {
 
                         <ul className='text-secondary list-disc list-inside text-lg md:space-y-2 space-y-3'>
                             <li> IT Associate in International University (2025-Present) </li>
-                            <li> Assisted in developing responsive web pages using HTML, CSS </li>
+                            <li> Assisted in developing web pages using HTML, CSS, PhP/Laravel project </li>
                             <li> Participated in daily standups and sprint planning </li>
                             <li> Support Engineer for Hotel Management Software (2022-2024) </li>
                         </ul>
