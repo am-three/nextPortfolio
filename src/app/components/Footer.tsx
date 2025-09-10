@@ -35,9 +35,10 @@ const Footer = () => {
                             <FaGithub />
                         </Link>
 
-                        <Link href='https://www.instagram.com/amthreeix/' target='_blank'
+                        <Link href='' target='_blank'
                             className='text-2xl hover:text-primary dark:text-gray-400 transaction duration-300'
                         >
+                            {/* https://www.instagram.com/amthreeix/ */}
                             <FaInstagram />
                         </Link>
 

@@ -31,7 +31,6 @@ const Navbar = () => {
         { href: '/', label: 'HOME', icon: <HomeIcon /> },
         { href: '/about', label: 'ABOUT' },
         { href: '/projects', label: 'PROJECTS' },
-        // { href: '/blogs', label: 'Blogs' },
         { href: '/contact', label: 'CONTACT' },
     ]
 
