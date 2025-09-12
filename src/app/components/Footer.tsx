@@ -36,7 +36,7 @@ const Footer = () => {
                         </Link>
 
                         <Link href='' target='_blank'
-                            className='text-2xl hover:text-primary dark:text-gray-400 transaction duration-300'
+                            className='text-2xl hover:text-primary dark:text-gray-400 transaction duration-300 pointer-events-none'
                         >
                             {/* https://www.instagram.com/amthreeix/ */}
                             <FaInstagram />
