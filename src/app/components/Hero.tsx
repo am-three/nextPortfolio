@@ -41,10 +41,11 @@ const Hero = () => {
                     {...fadeIn}
                     transition={{ delay: 0.6 }}
                     className='flex justify-center items-center space-x-3 mb-8 gap-3'>
-                    <Link href='https://github.com/am-three' target='_blank'
+                    <Link href='https://youtu.be/gNPy_CO4zqA?si=7bkWiPw9vOX1zhkR' target='_blank'
                         className='text-2xl hover:text-primary dark:text-gray-400 transaction duration-300'
                     >
                         <FaGithub />
+                        {/* https://github.com/am-three */}
                     </Link>
 
                     {/* <Link href='https://mail.google.com/mail/?view=cm&fs=1&to=mthree9999@gmail.com' target='_blank'

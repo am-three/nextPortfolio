@@ -25,7 +25,7 @@ const Aboutpage = () => {
                     I&apos;m currently looking for opportunities as a Junior Frontend Developer. I&apos;m sure that I can learn things easily and work actively. A motivated
                     and detail-oriented JavaScript Frontend Junior with a solid foundation in web development principles, JavaScript, React libraries, Nextjs framework and responsive design.
                     I want a lot of experiences about that, I can do myself or under senior&apos;s guide-line and want to use it in your interests.
-                    Passionate about creating user-friendly interfaces and eager to contribute to team success through hard work and continuous learning. I&apos;m wanna and trying to build modern websites,
+                    Passionate about creating user-friendly interfaces and eager to contribute to team success through hard work and continuous learning. I&apos;m tryna build modern websites,
                     my learning and testing projects are under processing.
                 </motion.p>
             </section>
@@ -95,7 +95,7 @@ const Aboutpage = () => {
 
                         <ul className='text-secondary list-disc list-inside text-lg md:space-y-2 space-y-3'>
                             <li> IT Associate in International University (2025-Present) </li>
-                            <li> Assisted in developing web pages using HTML, CSS, PhP/Laravel project </li>
+                            <li> Assisted in developing web pages using HTML, CSS and PhP/Laravel project </li>
                             <li> Participated in daily standups and sprint planning </li>
                             <li> Support Engineer for Hotel Management Software (2022-2024) </li>
                         </ul>

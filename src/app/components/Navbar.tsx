@@ -10,6 +10,9 @@ import { usePathname } from 'next/navigation';
 import { BoltIcon, MoonIcon, XCircleIcon, Bars3CenterLeftIcon } from '@heroicons/react/24/solid';
 import { useTheme } from '../context/ThemeContext';
 import { HomeIcon } from '@heroicons/react/16/solid';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+// import Lottie from 'lottie-react';
+import running from '../../../public/Runningcharacter.gif'
 
 
 const Navbar = () => {
@@ -36,16 +39,28 @@ const Navbar = () => {
 
     return (
 
-        <nav className='fixed w-full z-50 backdrop-blur-sm bg-white/40 dark:bg-green-400/60 border-b border-gray-300 shadow-md'>
+        <nav className='fixed w-full z-50 backdrop-blur-sm  border-gray-300 shadow-md'>
 
             <div className='container max-w-7xl mx-auto px-4 '>
 
-                <div className='h-12 flex justify-between items-center '>
+                <div className='h-20 flex justify-between items-center '>
 
                     {/* <Link href='/' className='text-primary text-xl font-bold'> amthreecmty&trade; </Link> */}
-                    <Link href='/'>
+                    {/* <Link href='/'>
                         <Image src={icon} alt='icon' className='w-16 h-16' />
+                    </Link> */}
+                    {/* <DotLottieReact
+                        src="path/to/animation.lottie"
+                        loop
+                        autoplay
+                    /> */}
+
+
+                    <Link href='/'>
+                        <Image src={running} alt='live logo' className='object-contain w-15 h-15' />
                     </Link>
+
+
 
                     {/* for desktop.v menu */}
                     <div className='hidden md:flex items-center space-x-10'>
@@ -99,7 +114,7 @@ const Navbar = () => {
                                     menuItems.map((item, index) => (
                                         <div key={index} onClick={toggleDrawerOpen}>
                                             <Link href={item.href}
-                                                className='block py-2 hover:text-primary transaction-colors'>
+                                                className='block font-bold py-2 hover:text-primary transaction-colors'>
                                                 {item.label}
                                             </Link>
                                         </div>
