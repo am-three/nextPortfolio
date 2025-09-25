@@ -76,7 +76,7 @@ const Project = () => {
 
             </motion.div>
 
-            <motion.div
+            {/* <motion.div
                 // initial={{ opacity: 0 }}
                 // animate={{ opacity: 1 }}
                 // exit={{ opacity: 0 }}
@@ -88,7 +88,7 @@ const Project = () => {
                 >
                     About Me
                 </Link>
-            </motion.div>
+            </motion.div> */}
 
 
         </section>
