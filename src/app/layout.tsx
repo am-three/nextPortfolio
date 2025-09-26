@@ -21,9 +21,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Khant Thu Aung",
+  title: "devPortfolio | Khant Thu Aung",
   description: "Portfolio of Khant Thu Aung, a junior frontend developer skilled in React, Next.js, and TailwindCSS.",
-  keywords: ["Frontend Developer", "React", "Next.js", "Portfolio"],
+  keywords: ["Frontend Developer", "JavaScript", "React", "Next.js", "Portfolio"],
 };
 
 export default function RootLayout({
